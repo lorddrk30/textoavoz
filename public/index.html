@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertidor de Texto a Voz</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">Convertidor de Texto a Voz</h1>
+
+        <form id="ttsForm">
+            <div class="input-field">
+                <textarea id="inputText" class="materialize-textarea" placeholder="Ingresa el texto aquí..."></textarea>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Convertir a Voz
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+
+        <div id="loader" class="progress" style="display:none;">
+            <div class="indeterminate"></div>
+        </div>
+
+        <audio id="audioResult" controls></audio>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
